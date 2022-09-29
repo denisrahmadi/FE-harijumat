@@ -1,6 +1,12 @@
 import React from "react";
 import "./Dashboard.css";
-import hero from "../../Image/coding.jpg";
+import hero from "../../Image/herobanner.jpg";
+import logo1 from "../../Image/logo1.png";
+import logo2 from "../../Image/logo2.png";
+import logo3 from "../../Image/logo3.jpg";
+import testi1 from "../../Image/testi1.jpg";
+import testi2 from "../../Image/testi2.png";
+import testi3 from "../../Image/testi3.jpg";
 
 function Dashboard(props) {
   return (
@@ -21,16 +27,16 @@ function Dashboard(props) {
         </div>
       </div> */}
 
-      <div className="container col-xxl-8 px-4 py-5">
-        <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+      {/* Hero Banner */}
+      <div className="container col-xxl-8 px-4 pb-5">
+        <div className="row flex-lg-row-reverse align-items-center g-5 py-1">
           <div className="col-10 col-sm-8 col-lg-6">
             <img src={hero} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
           </div>
           <div className="col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+            <h1 className="display-5 fw-bold lh-1 mb-3">Raih Karir Impian Walau Sesat di Jalan.</h1>
             <p className="lead">
-              Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and
-              powerful JavaScript plugins.
+              Kuasai skill dan dapatkan pekerjaan impianmu. Sudah 2380 alumni berhasil meraih karir impian mereka. Apabila setelah lulus kamu belum bekerja dalam 365 hari, kamu berhak mendapatkan refund up to 110% investasimu.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
@@ -39,6 +45,51 @@ function Dashboard(props) {
               <button type="button" className="btn btn-outline-secondary btn-lg px-4">
                 Default
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimoni */}
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-md-3">
+            <div className="card">
+              <img src={testi1} className="card-img-top" alt="..."  width="253" height="142"/>
+              <div className="card-body">
+                <h5 className="card-title">Mega-chan</h5>
+                <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
+                <p className="text-end">
+                  Front End Engineer at
+                  <img src={logo1} width="40" alt="" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3 mx-5">
+            <div className="card">
+              <img src={testi2} className="card-img-top" alt="..." width="253" height="142"/>
+              <div className="card-body">
+                <h5 className="card-title">Mega-chan</h5>
+                <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
+                <p className="text-end">
+                  Front End Engineer at
+                  <img src={logo2} width="40" alt="" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="card">
+              <img src={testi3} className="card-img-top " alt="..." width="253" height="142"/>
+              <div className="card-body">
+                <h5 className="card-title">Mega-chan</h5>
+                <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
+                <p className="text-end">
+                  Front End Engineer at
+                  <img src={logo3} width="16" alt="" />
+                </p>
+              </div>
             </div>
           </div>
         </div>
