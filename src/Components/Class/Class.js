@@ -11,7 +11,7 @@ function Class(props) {
         <button className="btn btn-outline-success" type="submit">
           Search
         </button>
-        </form>
+      </form>
       <div className="row ">
         <div className="col-lg-4">
           <img src={class1} className=" rounded" width="350" height="160" />

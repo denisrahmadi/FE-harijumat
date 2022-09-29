@@ -34,16 +34,14 @@ function Dashboard(props) {
             <img src={hero} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
           </div>
           <div className="col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">Raih Karir Impian Walau Sesat di Jalan.</h1>
+            <h1 className="display-5 fw-bold lh-1 mb-3">Bingung mau kemana? Raih karir impianmu sekarang.</h1>
             <p className="lead">
-              Kuasai skill dan dapatkan pekerjaan impianmu. Sudah 2380 alumni berhasil meraih karir impian mereka. Apabila setelah lulus kamu belum bekerja dalam 365 hari, kamu berhak mendapatkan refund up to 110% investasimu.
+              Kuasai skill dan dapatkan pekerjaan impianmu. <span className="fw-semibold">2380 alumni berhasil meraih karir impian</span> Sudah mereka. Apabila setelah lulus kamu belum bekerja dalam 365 hari, kamu berhak mendapatkan{" "}
+              <span className="fw-semibold">refund up to 110%</span> investasimu.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
-                Primary
-              </button>
-              <button type="button" className="btn btn-outline-secondary btn-lg px-4">
-                Default
+              <button type="button" className="btn btn-success btn-lg px-4 me-md-2">
+                Temukan kelas
               </button>
             </div>
           </div>
@@ -55,7 +53,7 @@ function Dashboard(props) {
         <div className="row">
           <div className="col-md-3">
             <div className="card">
-              <img src={testi1} className="card-img-top" alt="..."  width="253" height="142"/>
+              <img src={testi1} className="card-img-top" alt="..." width="253" height="142" />
               <div className="card-body">
                 <h5 className="card-title">Mega-chan</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
@@ -68,7 +66,7 @@ function Dashboard(props) {
           </div>
           <div className="col-md-3 mx-5">
             <div className="card">
-              <img src={testi2} className="card-img-top" alt="..." width="253" height="142"/>
+              <img src={testi2} className="card-img-top" alt="..." width="253" height="142" />
               <div className="card-body">
                 <h5 className="card-title">Mega-chan</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
@@ -81,7 +79,7 @@ function Dashboard(props) {
           </div>
           <div className="col-md-3">
             <div className="card">
-              <img src={testi3} className="card-img-top " alt="..." width="253" height="142"/>
+              <img src={testi3} className="card-img-top " alt="..." width="253" height="142" />
               <div className="card-body">
                 <h5 className="card-title">Mega-chan</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
@@ -93,6 +91,64 @@ function Dashboard(props) {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* table kenapa milih harijumat.com */}
+      <div className="container">
+        <h1 className="text-center mb-4 mt-5">Mengapa harus harijumat.com?</h1>
+        <table className="table">
+          <thead>
+            <tr className="text-center table-secondary">
+              <th scope="col"></th>
+              <th scope="col">harijumat.com</th>
+              <th scope="col">Other Bootcamp</th>
+            </tr>
+          </thead>
+          <tbody className="text-center">
+            <tr>
+              <td className="table-warning">Gratis</td>
+              <td className="table-success">
+                <i className="fa-sharp fa-solid fa-circle-check"></i>
+              </td>
+              <td className="table-danger">Ratusan - Puluhan juta</td>
+            </tr>
+            <tr>
+              <td className="table-warning">Gratis</td>
+              <td className="table-success">
+                <i className="fa-sharp fa-solid fa-circle-check"></i>
+              </td>
+              <td className="table-danger">Ratusan - Puluhan juta</td>
+            </tr>
+            <tr>
+              <td className="table-warning">Gratis</td>
+              <td className="table-success">
+                <i className="fa-sharp fa-solid fa-circle-check"></i>
+              </td>
+              <td className="table-danger">Ratusan - Puluhan juta</td>
+            </tr>
+            <tr>
+              <td className="table-warning">Gratis</td>
+              <td className="table-success">
+                <i className="fa-sharp fa-solid fa-circle-check"></i>
+              </td>
+              <td className="table-danger">Ratusan - Puluhan juta</td>
+            </tr>
+            <tr>
+              <td className="table-warning">Gratis</td>
+              <td className="table-success">
+                <i className="fa-sharp fa-solid fa-circle-check"></i>
+              </td>
+              <td className="table-danger">Ratusan - Puluhan juta</td>
+            </tr>
+            <tr>
+              <td className="table-warning">Gratis</td>
+              <td className="table-success">
+                <i className="fa-sharp fa-solid fa-circle-check"></i>
+              </td>
+              <td className="table-danger">Ratusan - Puluhan juta</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </>
   );
