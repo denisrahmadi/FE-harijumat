@@ -7,25 +7,12 @@ import logo3 from "../../Image/logo3.jpg";
 import testi1 from "../../Image/testi1.jpg";
 import testi2 from "../../Image/testi2.png";
 import testi3 from "../../Image/testi3.jpg";
+import { Link } from "react-router-dom";
 
 function Dashboard(props) {
   return (
     <>
-      {/* INI JUMBOTRON */}
-      {/* <div className="p-5 mb-4 bg-light rounded-3 latarbelakang">
-        <div className="container-fluid py-5">
-          <h1 className="display-5 fw-bold">
-            Raih Karir Impian <br /> Walau Sesat di Jalan
-          </h1>
-          <p className="col-md-8 fs-5 mt-5">
-            Kuasai skill dan dapatkan pekerjaan impianmu. Sudah <span className="fw-bold">2380</span> alumni berhasil meraih karir impian mereka. Apabila setelah lulus kamu belum bekerja dalam 365 hari, kamu berhak mendapatkan{" "}
-            <span className="fw-bold">refund up to 110%</span> investasimu.
-          </p>
-          <button className="btn btn-dark btn-lg mt-3" type="button">
-            Temukan kelas terbaikmu !
-          </button>
-        </div>
-      </div> */}
+      
 
       {/* Hero Banner */}
       <div className="container col-xxl-8 px-4 pb-5">
@@ -34,15 +21,15 @@ function Dashboard(props) {
             <img src={hero} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
           </div>
           <div className="col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">Bingung mau kemana? Raih karir impianmu sekarang.</h1>
+            <h1 className="display-5 fw-bold lh-1 mb-3">Bingung mau kemana? Raih karir impianmu sekarang!</h1>
             <p className="lead">
               Kuasai skill dan dapatkan pekerjaan impianmu. <span className="fw-semibold">2380 alumni berhasil meraih karir impian</span> Sudah mereka. Apabila setelah lulus kamu belum bekerja dalam 365 hari, kamu berhak mendapatkan{" "}
               <span className="fw-semibold">refund up to 110%</span> investasimu.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" className="btn btn-success btn-lg px-4 me-md-2">
+              <Link to={"/class"} className="btn btn-success btn-lg px-4 me-md-2">
                 Temukan kelas
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -50,7 +37,7 @@ function Dashboard(props) {
 
       {/* Testimoni */}
       <div className="container py-5">
-        <div className="row">
+        <div className="row d-flex justify-content-center">
           <div className="col-md-3">
             <div className="card">
               <img src={testi1} className="card-img-top" alt="..." width="253" height="142" />
@@ -149,6 +136,58 @@ function Dashboard(props) {
             </tr>
           </tbody>
         </table>
+      </div>
+
+      {/* lulusan harijumat */}
+      <div className="container pt-5 mt-5">
+        <div className="row">
+          <h1 className="mb-5">Lulusan aing udh gawe dimana aja:</h1>
+          <div className="col">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_air-asia-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col-6">2 of 3 (wider)</div>
+          <div className="col">3 of 3</div>
+        </div>
+        <div className="row">
+          <div className="col">1 of 3</div>
+          <div className="col-5">2 of 3 (wider)</div>
+          <div className="col">3 of 3</div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="row row-cols-6">
+          <div className="col-6 col-md">1</div>
+          <div className="col-6 col-md">1</div>
+          <div className="col-6 col-md">1</div>
+          <div className="col-6 col-md">1</div>
+          <div className="col-6 col-md">1</div>
+          <div className="col-6 col-md">1</div>
+          <div className="col-6 col-md">1</div>
+          {/* <div className="col">2</div>
+          <div className="col-3">3</div>
+          <div className="col">4</div>
+          <div className="col">5</div>
+          <div className="col">6</div> */}
+          {/* <div className="col">7</div>
+          <div className="col">8</div>
+          <div className="col">9</div>
+          <div className="col">10</div>
+          <div className="col">11</div>
+          <div className="col">12</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div>
+          <div className="col">13</div> */}
+        </div>
       </div>
     </>
   );

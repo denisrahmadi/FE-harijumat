@@ -1,60 +1,79 @@
-import React from "react";
-import contactUs from "../../Image/contact-us.jpg"
+import React, { useState } from "react";
+import contactUs from "../../Image/contact-us.jpg";
+
 function Contact(props) {
+  const [username, setUsername] = useState("test");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+function handleSubmit() {
+    console.log(username)
+    console.log(email)
+    console.log(message)
+  }
+
   return (
     <>
-      {/* <main className="form-signin">
-        <form>
-          <h1 className="h1 mb-3 fw-bold text-center">Contact Us</h1>
-
-          <div className="form-floating">
-            <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div className="form-floating mt-1">
-            <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Comments</label>
-          </div>
-          <button className="w-100 btn btn-lg btn-success my-3" type="submit">
-            Submit
-          </button>
-        </form>
-      </main> */}
-    
+      {/* form contact us */}
       <section>
         <div className="container pt-5">
           <div className="card shadow">
-            <div className="card-body">
+            <div className="card-body ">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6 text-white bg-dark rounded-3">
                   <h3 className="text-center">Contact Us</h3>
                   <hr />
                   <div className="form-group">
                     <label className="mb-1">User Name</label>
-                    <input type="text" className="form-control" placeholder="Enter your username" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Enter your username"
+                      onChange={(e) => {
+                        setUsername(e.target.value);
+                      }}
+                    />
                   </div>
                   <div className="form-group py-3">
                     <label className="mb-1">Email</label>
-                    <input type="text" className="form-control" placeholder="example123@gmail.com" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="example123@gmail.com"
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
+                    />
                   </div>
                   <div className="form-group">
                     <label className="mb-1">Message</label>
-                    <textarea name="" id="" cols="3" className="form-control" placeholder="Type your problem ..."></textarea>
+                    <textarea
+                      name=""
+                      id=""
+                      cols="3"
+                      className="form-control"
+                      placeholder="Type your problem ..."
+                      onChange={(e) => {
+                        setMessage(e.target.value);
+                      }}
+                    />
                   </div>
                   <div className="form-group pt-3">
-                    <button type="button" className="btn btn-success shadow w-100">Submit</button>
+                    <button type="submit" className="btn btn-success shadow w-100" onClick={() => {handleSubmit()}}>
+                      Submit
+                    </button>
                   </div>
                 </div>
+
+                {/* image contact us */}
                 <div className="col-md-6 border-start text-center">
-                  <img src={contactUs} alt="" width="420" height="420"/>
+                  <img src={contactUs} alt="" width="420" height="420" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    
-    
     </>
   );
 }
