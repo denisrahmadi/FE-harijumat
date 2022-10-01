@@ -34,20 +34,21 @@ function Login() {
     <>
       {/* Form Login */}
       <div className="container">
-        <div className="container col-xl-10 col-xxl-8 px-4 py-5 ">
-          <div className="row align-items-center g-lg-5 py-2">
-            <div className="col-lg-7 ">
-              <img src={signin} alt="" width="420" height="420" />
+        <div className="container ">
+          <div className="row ">
+            <div className="col mt-5">
+              <img src={signin} alt="" width="500" height="500" />
             </div>
-            <div className="col-md-10 mx-auto col-lg-5">
-              <h1 className="text-center fw-bold">Sign In</h1>
+            <div className="col justify-content-center">
+              
               {/* input user */}
               <form
-                className="p-4 p-md-5 border rounded-3 bg-dark"
+                className="p-4 p-md-5 border rounded-3 bg-dark w-75 geserkiri"
                 onSubmit={(e) => {
                   handleSubmit(e);
                 }}
               >
+                <h1 className="fw-bold text-center text-white mb-4">Sign In</h1>
                 <div className="form-floating mb-3">
                   <input
                     type="email"

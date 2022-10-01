@@ -16,9 +16,9 @@ function Regist() {
     <>
       <div className="container">
         <div className="container col-xl-10 col-xxl-8 px-4 py-5 w-100">
-          <div className="row align-items-center g-lg-5 py-5 ">
+          <div className="row align-items-center g-lg-5 pb-5 ">
             <div className="col-lg-7 ">
-              <img src={signup} alt="" width="420" height="420" />
+              <img src={signup} alt="" width="500" height="500" />
             </div>
             <div className="col-md-10 mx-auto col-lg-5">
               <h1 className="text-center fw-bold">Sign Up</h1>

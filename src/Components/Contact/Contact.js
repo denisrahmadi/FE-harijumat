@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import contactUs from "../../Image/contact-us.jpg";
+import contactUs from "../../Image/contact-us.png";
 
 function Contact(props) {
   const [username, setUsername] = useState("test");
@@ -18,7 +18,7 @@ function handleSubmit() {
       <section>
         <div className="container pt-5">
           <div className="card shadow">
-            <div className="card-body ">
+            <div className="card-body bg-dark rounded-3">
               <div className="row">
                 <div className="col-md-6 text-white bg-dark rounded-3">
                   <h3 className="text-center">Contact Us</h3>
@@ -74,6 +74,8 @@ function handleSubmit() {
           </div>
         </div>
       </section>
+
+      
     </>
   );
 }

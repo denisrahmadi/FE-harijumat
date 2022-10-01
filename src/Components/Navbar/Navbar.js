@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../Image/logo_hari_jumat.jpeg";
+import logo from "../../Image/logo-harijumat.jpeg";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark fixed-top warna-navbar">
-      <div className="container-fluid">
+      <div className="container-fluid ms-2">
         <a className="navbar-brand" href="#">
           <img src={logo} width="128" alt="" />
         </a>
