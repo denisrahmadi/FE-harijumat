@@ -36,7 +36,7 @@ function Login() {
       <div className="container">
         <div className="container ">
           <div className="row ">
-            <div className="col mt-5">
+            <div className="col mt-">
               <img src={signin} alt="" width="500" height="500" />
             </div>
             <div className="col justify-content-center">

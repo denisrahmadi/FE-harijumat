@@ -240,7 +240,7 @@ function Dashboard(props) {
       </div>
       <br />
 
-      {/* Jumbotron */}
+      {/* Jumbotron
       <div className="my-5 py-5">
         <div className="container-fluid py-3 bg-dark text-white rounded-2 ">
           <div className="row">
@@ -256,7 +256,7 @@ function Dashboard(props) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
